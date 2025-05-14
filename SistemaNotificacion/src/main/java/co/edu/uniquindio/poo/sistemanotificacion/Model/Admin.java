@@ -3,8 +3,8 @@ package co.edu.uniquindio.poo.sistemanotificacion.Model;
 public class Admin extends Usuario {
     private String idAdmin;
 
-    public Admin(String nombre, String correo, String contrasena, boolean bloqueado, String idAdmin) {
-        super(nombre, correo, contrasena, bloqueado);
+    public Admin(String nombre, String correo, boolean bloqueado, String idAdmin) {
+        super(nombre, correo, bloqueado);
         this.idAdmin = idAdmin;
     }
 

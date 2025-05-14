@@ -3,13 +3,12 @@ package co.edu.uniquindio.poo.sistemanotificacion.Model;
 public abstract class Usuario {
     private String nombre;
     private String correo;
-    private String contrasena;
     private boolean bloqueado;
 
-    public Usuario(String nombre, String correo, String contrasena, boolean bloqueado) {
+    public Usuario(String nombre, String correo, boolean bloqueado) {
         this.nombre = nombre;
         this.correo = correo;
-        this.contrasena = contrasena;
+        this.bloqueado = bloqueado;
     }
 
     public String getNombre() {
@@ -26,14 +25,6 @@ public abstract class Usuario {
 
     public void setCorreo(String correo) {
         this.correo = correo;
-    }
-
-    public String getContrasena() {
-        return contrasena;
-    }
-
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
     }
 
     public boolean isBloqueado() {

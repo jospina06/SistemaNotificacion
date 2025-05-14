@@ -2,8 +2,8 @@ package co.edu.uniquindio.poo.sistemanotificacion.Model;
 
 public class Invitado extends Usuario {
 
-    public Invitado(String nombre, String correo, String contrasena, boolean bloqueado) {
-        super(nombre, correo, contrasena, bloqueado);
+    public Invitado(String nombre, String correo, boolean bloqueado) {
+        super(nombre, correo, bloqueado);
     }
 
     @Override

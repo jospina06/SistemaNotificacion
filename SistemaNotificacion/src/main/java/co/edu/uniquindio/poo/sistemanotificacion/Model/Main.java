@@ -4,11 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
         //Crear Usuario
-        Usuario usuario = new Cliente("Juan", "jjospina@gmail.com","jjov",
-                false);
+        Usuario usuario = new Cliente("Juan", "jjospina@gmail.com", false);
 
         //Crear notificación
-        Notificacion notificacion = new Notificacion(usuario, "Su perfil ha sido actualizado");
+        Notificacion notificacion = new Notificacion(usuario, "Se ha actualizado su perfil");
 
         //Establecer estrategia
         notificacion.setStrategy(new EmailNotificacion());
