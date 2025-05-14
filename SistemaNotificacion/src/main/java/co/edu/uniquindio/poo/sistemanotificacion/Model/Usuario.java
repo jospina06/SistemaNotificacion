@@ -4,8 +4,9 @@ public abstract class Usuario {
     private String nombre;
     private String correo;
     private String contrasena;
+    private boolean bloqueado;
 
-    public Usuario(String nombre, String correo, String contrasena) {
+    public Usuario(String nombre, String correo, String contrasena, boolean bloqueado) {
         this.nombre = nombre;
         this.correo = correo;
         this.contrasena = contrasena;
@@ -35,6 +36,15 @@ public abstract class Usuario {
         this.contrasena = contrasena;
     }
 
-    public abstract void formato (String mensaje);
+    public boolean isBloqueado() {
+        return bloqueado;
+    }
 
+    public final String formato (String mensajeBase){
+        return getEncabezado() + "\n" + mensajePersonalizado(mensajeBase) + "\n" + getFooter();
+    }
+
+    public abstract String getEncabezado();
+    public abstract String mensajePersonalizado(String mensajeBase);
+    public abstract String getFooter();
 }

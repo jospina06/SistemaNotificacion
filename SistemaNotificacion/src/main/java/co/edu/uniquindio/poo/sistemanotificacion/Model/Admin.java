@@ -3,8 +3,8 @@ package co.edu.uniquindio.poo.sistemanotificacion.Model;
 public class Admin extends Usuario {
     private String idAdmin;
 
-    public Admin(String nombre, String correo, String contrasena, String idAdmin) {
-        super(nombre, correo, contrasena);
+    public Admin(String nombre, String correo, String contrasena, boolean bloqueado, String idAdmin) {
+        super(nombre, correo, contrasena, bloqueado);
         this.idAdmin = idAdmin;
     }
 
@@ -17,8 +17,17 @@ public class Admin extends Usuario {
     }
 
     @Override
-    public void formato(String mensaje) {
-        System.out.println("Mensaje nuevo para Admin N°: " + idAdmin + "\n" + mensaje);
+    public String getEncabezado() {
+        return "[ADMIN]";
     }
 
+    @Override
+    public String mensajePersonalizado(String mensajeBase) {
+        return "Administrador: " + mensajeBase;
+    }
+
+    @Override
+    public String getFooter() {
+        return "-- Sistena --";
+    }
 }
