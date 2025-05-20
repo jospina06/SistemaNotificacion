@@ -4,7 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         //Crear Usuario
-        Usuario usuario = new Cliente("Juan", "jjospina@gmail.com", false);
+        Usuario usuario = new Admin("Juan", "jjospina@gmail.com");
+        usuario.setBloqueado(true);
 
         //Crear notificación
         Notificacion notificacion = new Notificacion(usuario, "Se ha actualizado su perfil");

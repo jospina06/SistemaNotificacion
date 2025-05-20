@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="309.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.sistemanotificacion.ResgistrarUsuario">
+   <children>
+      <Label fx:id="Label_Registrar" layoutX="92.0" layoutY="14.0" text="Registrar un nuevo Usuario">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label_Nombre" layoutX="50.0" layoutY="76.0" text="Ingrese un nombre: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TxtField_NombreUsuario" layoutX="184.0" layoutY="74.0" prefHeight="25.0" prefWidth="176.0" promptText="Nombre de Usuario" />
+      <TextField fx:id="TxtField_EmailUsuario" layoutX="167.0" layoutY="118.0" prefHeight="25.0" prefWidth="193.0" promptText="Email del Usuario" />
+      <Label fx:id="Label_Email" layoutX="50.0" layoutY="120.0" text="Ingrese un email: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="Button_RegistrarUsuario" layoutX="158.0" layoutY="215.0" mnemonicParsing="false" text="Registrar Usuario" />
+      <ComboBox fx:id="ComboBox_TipoUsuario" layoutX="137.0" layoutY="157.0" prefWidth="150.0" promptText="Tipo de Usuario" />
+      <Button fx:id="Button_Atras" layoutX="14.0" layoutY="270.0" mnemonicParsing="false" text="Atras" />
+      <Button fx:id="Button_Salir" layoutX="370.0" layoutY="270.0" mnemonicParsing="false" text="Salir" />
+      <Separator layoutX="10.0" layoutY="43.0" prefHeight="25.0" prefWidth="404.0" />
+   </children>
+</AnchorPane>

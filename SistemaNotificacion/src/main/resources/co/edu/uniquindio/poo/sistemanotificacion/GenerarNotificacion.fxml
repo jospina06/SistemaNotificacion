@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="259.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.sistemanotificacion.GenerarNotificacion">
+   <children>
+      <Label fx:id="Label_Generar" layoutX="104.0" layoutY="14.0" text="Generar una nueva notificación">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Label_IngresarEmail" layoutX="16.0" layoutY="75.0" text="Usuario al que se le enviará la notificación:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TxtField_Email" layoutX="299.0" layoutY="73.0" prefHeight="25.0" prefWidth="186.0" promptText="Email del Usuario" />
+      <Label fx:id="Label_Mensaje" layoutX="16.0" layoutY="123.0" text="Motivo de la notificación: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TxtField_Mensaje" layoutX="281.0" layoutY="121.0" prefHeight="25.0" prefWidth="196.0" promptText="Mensaje base" />
+      <Separator layoutX="11.0" layoutY="55.0" prefHeight="0.0" prefWidth="465.0" />
+      <Button fx:id="Button_GenerarNotificación" layoutX="188.0" layoutY="164.0" mnemonicParsing="false" text="Generar Notificación" />
+      <Button fx:id="Button_Atras" layoutX="15.0" layoutY="209.0" mnemonicParsing="false" text="Atras" />
+      <Button fx:id="Button_Salir" layoutX="445.0" layoutY="209.0" mnemonicParsing="false" text="Salir" />
+   </children>
+</AnchorPane>

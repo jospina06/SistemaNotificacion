@@ -2,8 +2,8 @@ package co.edu.uniquindio.poo.sistemanotificacion.Model;
 
 public class Cliente extends Usuario {
 
-    public Cliente(String nombre, String correo, boolean bloqueado) {
-        super(nombre, correo, bloqueado);
+    public Cliente(String nombre, String correo) {
+        super(nombre, correo);
     }
 
     @Override

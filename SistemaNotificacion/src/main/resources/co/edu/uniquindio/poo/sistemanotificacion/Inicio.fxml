@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.sistemanotificacion.Principal">
+   <children>
+      <Label fx:id="Label_NombreEmpresa" alignment="CENTER" layoutX="107.0" layoutY="8.0" prefHeight="30.0" prefWidth="93.0" text="Notify SA" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="22.0" layoutY="50.0" prefHeight="3.0" prefWidth="258.0" />
+      <Button fx:id="Button_GenerarNotificacion" layoutX="89.0" layoutY="73.0" mnemonicParsing="false" text="Generar Notificación" />
+      <Button fx:id="Button_Registrar" layoutX="104.0" layoutY="311.0" mnemonicParsing="false" text="Registrarse" />
+      <Label fx:id="Label_Registrar" layoutX="35.0" layoutY="280.0" text="¿No se ha registrado?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="Button_Salir" layoutX="253.0" layoutY="361.0" mnemonicParsing="false" text="Salir" />
+      <Button fx:id="Button_Ingresar" layoutX="122.0" layoutY="138.0" mnemonicParsing="false" text="Ingresar" />
+      <Button fx:id="Button_Invitado" layoutX="90.0" layoutY="200.0" mnemonicParsing="false" text="Iniciar como Invitado" />
+   </children>
+</AnchorPane>

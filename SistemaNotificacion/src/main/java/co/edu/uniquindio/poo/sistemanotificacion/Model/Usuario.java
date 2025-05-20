@@ -5,10 +5,10 @@ public abstract class Usuario {
     private String correo;
     private boolean bloqueado;
 
-    public Usuario(String nombre, String correo, boolean bloqueado) {
+    public Usuario(String nombre, String correo) {
         this.nombre = nombre;
         this.correo = correo;
-        this.bloqueado = bloqueado;
+        this.bloqueado = false;
     }
 
     public String getNombre() {
@@ -29,6 +29,10 @@ public abstract class Usuario {
 
     public boolean isBloqueado() {
         return bloqueado;
+    }
+
+    public void setBloqueado(boolean bloqueado) {
+        this.bloqueado = bloqueado;
     }
 
     public final String formato (String mensajeBase){
