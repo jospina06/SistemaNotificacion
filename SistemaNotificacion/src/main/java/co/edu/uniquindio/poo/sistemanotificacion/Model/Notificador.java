@@ -26,7 +26,7 @@ public class Notificador {
             FiltroNotificacion filtro = new FiltroMensajeVacio();
             filtro.setNext(new FiltroUsuarioBloqueado());
 
-            if (filtro.manipular(notificacion)) {
+            if (filtro.filtrar(notificacion)) {
                 NotificacionCommand command = new EnviarNotificacionCommand(notificacion);
                 NotificacionInvocador invocador = new NotificacionInvocador();
                 invocador.addComando(command);
