@@ -6,8 +6,8 @@ public class FiltroNotificacion {
     public void setNext(FiltroNotificacion next) {
         this.next = next;
     }
-    public boolean manipular(Notificacion notificacion){
-        if (next != null) return next.manipular(notificacion);
+    public boolean filtrar(Notificacion notificacion){
+        if (next != null) return next.filtrar(notificacion);
         return true;
     }
 }

@@ -19,7 +19,7 @@ public class Main {
         filtro.setNext(new FiltroUsuarioBloqueado());
 
         //Validar notificación
-        if (filtro.manipular(notificacion)) {
+        if (filtro.filtrar(notificacion)) {
             //Crear y ejecutar Command
             NotificacionCommand command = new EnviarNotificacionCommand(notificacion);
             NotificacionInvocador invocador = new NotificacionInvocador();
